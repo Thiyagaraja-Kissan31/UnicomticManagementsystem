@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "Z:\\C#\\Assingement\\UnicomTICManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|z:\\c#\\assingement\\unicomticmanagementsystem\\unicomticmanagementsystem\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|solutionrelative:unicomticmanagementsystem\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|z:\\c#\\assingement\\unicomticmanagementsystem\\unicomticmanagementsystem\\views\\student management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|solutionrelative:unicomticmanagementsystem\\views\\student management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "Z:\\C#\\Assingement\\UnicomTICManagementSystem\\UnicomTICManagementSystem\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "UnicomTICManagementSystem\\Controllers\\StudentController.cs",
+              "ToolTip": "Z:\\C#\\Assingement\\UnicomTICManagementSystem\\UnicomTICManagementSystem\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "UnicomTICManagementSystem\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T03:06:08.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student Management.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\Assingement\\UnicomTICManagementSystem\\UnicomTICManagementSystem\\Views\\Student Management.cs",
+              "RelativeDocumentMoniker": "UnicomTICManagementSystem\\Views\\Student Management.cs",
+              "ToolTip": "Z:\\C#\\Assingement\\UnicomTICManagementSystem\\UnicomTICManagementSystem\\Views\\Student Management.cs [Design]",
+              "RelativeToolTip": "UnicomTICManagementSystem\\Views\\Student Management.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T03:04:56.853Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
