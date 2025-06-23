@@ -15,12 +15,20 @@ namespace UnicomTICManagementSystem.Views
     public partial class Marks_Management : Form
     {
         private MarkController markcontroller = new MarkController();
+        private Form previousForm;
+        private string selectedRole;
         public Marks_Management()
         {
             InitializeComponent();
             LoadMarks();
         }
-
+        public Marks_Management(Form prevForm, string role)
+        {
+            InitializeComponent();
+            previousForm = prevForm;
+            selectedRole = role;
+            LoadMarks();
+        }
         private void LoadMarks()
         {
             marksdataGridView1.DataSource = null;
@@ -31,8 +39,7 @@ namespace UnicomTICManagementSystem.Views
         private void backbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Admin_Interface adminInterface = new Admin_Interface();
-            adminInterface.Show();
+            previousForm.Show();
         }
 
         private void Marks_Management_Load(object sender, EventArgs e)

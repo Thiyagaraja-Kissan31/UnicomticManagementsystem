@@ -14,9 +14,18 @@ namespace UnicomTICManagementSystem.Views
     public partial class ViewMarks : Form
     {
         private MarkController markview = new MarkController();
+        private Form previousForm;
+        private string selectedRole;
         public ViewMarks()
         {
             InitializeComponent();
+            LoadMarks(GetAllMarks());
+        }
+        public ViewMarks(Form prevForm, string role)
+        {
+            InitializeComponent();
+            previousForm = prevForm;
+            selectedRole = role;
             LoadMarks(GetAllMarks());
         }
         private MarkController GetAllMarks()
@@ -35,8 +44,7 @@ namespace UnicomTICManagementSystem.Views
         private void backbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            User_Login userLogin = new User_Login();
-            userLogin.Show();
+            previousForm.Show();
         }
 
         private void ViewMarks_Load(object sender, EventArgs e)

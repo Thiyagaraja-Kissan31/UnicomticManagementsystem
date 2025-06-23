@@ -32,29 +32,29 @@ namespace UnicomTICManagementSystem.Views
         private void timetalebtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ViewTimetable ViewTimetable = new ViewTimetable();
+            ViewTimetable ViewTimetable = new ViewTimetable(this, "NewStafff");
             ViewTimetable.ShowDialog();
         }
 
         private void attendancetbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            VIewAttendance attendance = new VIewAttendance();
+            VIewAttendance attendance = new VIewAttendance(this, "NewStafff");
             attendance.ShowDialog();
         }
 
         private void exambtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ViewExams viewexams = new ViewExams();
-            viewexams.ShowDialog();
+            Exam_Management exam_management = new Exam_Management(this, "NewStafff");
+            exam_management.ShowDialog();
         }
 
         private void marksbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ViewMarks marks = new ViewMarks();
-            marks.ShowDialog();
+            Marks_Management marks_management = new Marks_Management(this, "NewStafff");
+            marks_management.ShowDialog();
         }
     }
 }

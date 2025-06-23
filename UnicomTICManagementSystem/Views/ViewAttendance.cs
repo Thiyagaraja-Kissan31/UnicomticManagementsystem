@@ -15,12 +15,22 @@ namespace UnicomTICManagementSystem.Views
     public partial class VIewAttendance : Form
     {
         private AttendanceController attendanceview = new AttendanceController();
+        private Form previousForm;
+        private string selectedRole;
+
         public VIewAttendance()
         {
             InitializeComponent();
             LoadAttendance(GetAttendance());
+           
         }
-
+        public VIewAttendance(Form prevForm, string role)
+        {
+            InitializeComponent();
+            previousForm = prevForm;
+            selectedRole = role;
+            LoadAttendance(GetAttendance());
+        }
         private AttendanceController GetAttendance()
         {
             return attendanceview;
@@ -38,8 +48,7 @@ namespace UnicomTICManagementSystem.Views
         private void backbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            User_Login userLogin = new User_Login();
-            userLogin.Show();
+            previousForm.Show();
         }
 
         private void viewattendancedata2_CellContentClick(object sender, DataGridViewCellEventArgs e)

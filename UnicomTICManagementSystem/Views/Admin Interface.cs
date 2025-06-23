@@ -33,7 +33,7 @@ namespace UnicomTICManagementSystem.Views
         private void marksbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Marks_Management marks_Management = new Marks_Management();
+            Marks_Management marks_Management = new Marks_Management(this, "Lecturer");
             marks_Management.ShowDialog();
         }
 
@@ -61,7 +61,7 @@ namespace UnicomTICManagementSystem.Views
         private void exambtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Exam_Management exam_Management = new Exam_Management();
+            Exam_Management exam_Management = new Exam_Management(this, "NewStaff");
             exam_Management.ShowDialog();
         }
 

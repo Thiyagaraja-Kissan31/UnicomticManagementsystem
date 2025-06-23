@@ -15,12 +15,20 @@ namespace UnicomTICManagementSystem.Views
     public partial class Exam_Management : Form
     {
         private ExamController examcontroller = new ExamController();
+        private Form previousForm;
+        private string selectedRole;
         public Exam_Management()
         {
             InitializeComponent();
             LoadExams();
         }
-
+        public Exam_Management(Form prevForm, string role)
+        {
+            InitializeComponent();
+            previousForm = prevForm;
+            selectedRole = role;
+            LoadExams();
+        }
         private void LoadExams()
         {
             examdataGridView1.DataSource = null;
@@ -30,8 +38,7 @@ namespace UnicomTICManagementSystem.Views
         private void backbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Admin_Interface adminInterface = new Admin_Interface();
-            adminInterface.Show();
+            previousForm.Show();
         }
 
         private void Exam_Management_Load(object sender, EventArgs e)

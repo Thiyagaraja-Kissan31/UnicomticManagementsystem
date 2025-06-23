@@ -15,12 +15,20 @@ namespace UnicomTICManagementSystem.Views
     public partial class ViewSubjects : Form
     {
         private SubjectController subjectview = new SubjectController();
+        private Form previousForm;
+        private string selectedRole;
         public ViewSubjects()
         {
             InitializeComponent();
             LoadSubejct(GetAllSubject());
         }
-
+        public ViewSubjects(Form prevForm, string role)
+        {
+            InitializeComponent();
+            previousForm = prevForm;
+            selectedRole = role;
+            LoadSubejct(GetAllSubject());
+        }
         private SubjectController GetAllSubject()
         {
             return subjectview;
@@ -42,8 +50,7 @@ namespace UnicomTICManagementSystem.Views
         private void backbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            User_Login userLogin = new User_Login();
-            userLogin.Show();
+            previousForm.Show();
         }
 
         private void viewtsubjectdata2_CellContentClick(object sender, DataGridViewCellEventArgs e)

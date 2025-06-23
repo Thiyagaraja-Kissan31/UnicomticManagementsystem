@@ -15,12 +15,20 @@ namespace UnicomTICManagementSystem.Views
     public partial class ViewTimetable : Form
     {
         private TimetableController timetableview = new TimetableController();
+        private Form previousForm;
+        private string selectedRole;
         public ViewTimetable()
         {
             InitializeComponent();
             LoadTimetable(GetTimetableview());
         }
-
+        public ViewTimetable(Form prevForm, string role)
+        {
+            InitializeComponent();
+            previousForm = prevForm;
+            selectedRole = role;
+            LoadTimetable(GetTimetableview());
+        }
         private TimetableController GetTimetableview()
         {
             return timetableview;
@@ -48,8 +56,7 @@ namespace UnicomTICManagementSystem.Views
         private void backbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            User_Login userLogin = new User_Login();
-            userLogin.Show();
-        }
+            previousForm.Show();
+        }    
     }
 }

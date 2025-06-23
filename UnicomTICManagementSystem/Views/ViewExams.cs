@@ -14,12 +14,20 @@ namespace UnicomTICManagementSystem.Views
     public partial class ViewExams : Form
     {
         private ExamController examview = new ExamController();
+        private Form previousForm;
+        private string selectedRole;
         public ViewExams()
         {
             InitializeComponent();
             LoadExam(GetAllExams());
         }
-
+        public ViewExams(Form prevForm, string role)
+        {
+            InitializeComponent();
+            previousForm = prevForm;
+            selectedRole = role;
+            LoadExam(GetAllExams());
+        }
         private ExamController GetAllExams()
         {
             return examview;
@@ -37,8 +45,7 @@ namespace UnicomTICManagementSystem.Views
         private void backbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            User_Login userLogin = new User_Login();
-            userLogin.Show();
+            previousForm.Show();
         }
 
         private void ViewExams_Load(object sender, EventArgs e)
