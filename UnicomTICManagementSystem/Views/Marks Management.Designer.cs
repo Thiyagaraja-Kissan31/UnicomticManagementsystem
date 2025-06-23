@@ -50,6 +50,7 @@
             // 
             this.marksdataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.marksdataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.marksdataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.marksdataGridView1.Location = new System.Drawing.Point(262, 340);
             this.marksdataGridView1.Name = "marksdataGridView1";
             this.marksdataGridView1.RowHeadersWidth = 51;

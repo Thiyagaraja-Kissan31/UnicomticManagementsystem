@@ -67,9 +67,6 @@
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\SubjectController.cs" />
     <Compile Include="Controllers\TimetableController.cs" />
-    <Compile Include="Ennam\LecturerName.cs" />
-    <Compile Include="Ennam\StudentName.cs" />
-    <Compile Include="Ennam\SubjectName.cs" />
     <Compile Include="Model\Admin.cs" />
     <Compile Include="Model\Attendance.cs" />
     <Compile Include="Model\Exam.cs" />

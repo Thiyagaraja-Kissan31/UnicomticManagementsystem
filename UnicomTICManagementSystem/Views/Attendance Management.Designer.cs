@@ -61,7 +61,7 @@
             // 
             this.dateofbirthTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateofbirthTextBox1.Location = new System.Drawing.Point(276, 316);
-            this.dateofbirthTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateofbirthTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.dateofbirthTextBox1.Mask = "00/00/0000 ";
             this.dateofbirthTextBox1.Name = "dateofbirthTextBox1";
             this.dateofbirthTextBox1.Size = new System.Drawing.Size(318, 24);
@@ -78,7 +78,7 @@
             "Late",
             "Excused"});
             this.statuscombobox.Location = new System.Drawing.Point(275, 384);
-            this.statuscombobox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.statuscombobox.Margin = new System.Windows.Forms.Padding(2);
             this.statuscombobox.Name = "statuscombobox";
             this.statuscombobox.Size = new System.Drawing.Size(318, 25);
             this.statuscombobox.TabIndex = 14;
@@ -147,6 +147,7 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.Location = new System.Drawing.Point(666, 171);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -157,6 +158,7 @@
             // backbtn
             // 
             this.backbtn.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.backbtn.Location = new System.Drawing.Point(12, 650);
             this.backbtn.Name = "backbtn";
             this.backbtn.Size = new System.Drawing.Size(99, 31);
@@ -168,8 +170,9 @@
             // submitbtn
             // 
             this.submitbtn.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.submitbtn.Location = new System.Drawing.Point(530, 439);
-            this.submitbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.submitbtn.Margin = new System.Windows.Forms.Padding(2);
             this.submitbtn.Name = "submitbtn";
             this.submitbtn.Size = new System.Drawing.Size(75, 25);
             this.submitbtn.TabIndex = 31;
@@ -198,8 +201,9 @@
             // Deletebtn1
             // 
             this.Deletebtn1.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Deletebtn1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Deletebtn1.Location = new System.Drawing.Point(443, 439);
-            this.Deletebtn1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Deletebtn1.Margin = new System.Windows.Forms.Padding(2);
             this.Deletebtn1.Name = "Deletebtn1";
             this.Deletebtn1.Size = new System.Drawing.Size(78, 25);
             this.Deletebtn1.TabIndex = 35;

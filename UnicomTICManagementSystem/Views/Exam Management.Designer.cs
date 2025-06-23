@@ -48,6 +48,7 @@
             // 
             this.examdataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.examdataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.examdataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.examdataGridView1.Location = new System.Drawing.Point(288, 281);
             this.examdataGridView1.Name = "examdataGridView1";
             this.examdataGridView1.RowHeadersWidth = 51;
@@ -171,6 +172,7 @@
             // backbtn
             // 
             this.backbtn.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.backbtn.Location = new System.Drawing.Point(12, 650);
             this.backbtn.Name = "backbtn";
             this.backbtn.Size = new System.Drawing.Size(99, 31);

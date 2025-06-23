@@ -56,7 +56,7 @@
             // 
             this.number.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.number.Location = new System.Drawing.Point(244, 344);
-            this.number.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.number.Margin = new System.Windows.Forms.Padding(2);
             this.number.Name = "number";
             this.number.Size = new System.Drawing.Size(50, 24);
             this.number.TabIndex = 29;
@@ -67,7 +67,7 @@
             // 
             this.mobilenum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mobilenum.Location = new System.Drawing.Point(306, 344);
-            this.mobilenum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mobilenum.Margin = new System.Windows.Forms.Padding(2);
             this.mobilenum.Mask = " 00-000-000";
             this.mobilenum.Name = "mobilenum";
             this.mobilenum.Size = new System.Drawing.Size(257, 24);
@@ -77,7 +77,7 @@
             // 
             this.dateofbirthTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateofbirthTextBox1.Location = new System.Drawing.Point(244, 297);
-            this.dateofbirthTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateofbirthTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.dateofbirthTextBox1.Mask = "00/00/0000 ";
             this.dateofbirthTextBox1.Name = "dateofbirthTextBox1";
             this.dateofbirthTextBox1.Size = new System.Drawing.Size(318, 24);
@@ -89,7 +89,7 @@
             this.subjectcombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subjectcombobox.FormattingEnabled = true;
             this.subjectcombobox.Location = new System.Drawing.Point(244, 149);
-            this.subjectcombobox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.subjectcombobox.Margin = new System.Windows.Forms.Padding(2);
             this.subjectcombobox.Name = "subjectcombobox";
             this.subjectcombobox.Size = new System.Drawing.Size(318, 25);
             this.subjectcombobox.TabIndex = 26;
@@ -102,7 +102,7 @@
             "Male",
             "Female"});
             this.gendercombobox.Location = new System.Drawing.Point(244, 230);
-            this.gendercombobox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gendercombobox.Margin = new System.Windows.Forms.Padding(2);
             this.gendercombobox.Name = "gendercombobox";
             this.gendercombobox.Size = new System.Drawing.Size(318, 25);
             this.gendercombobox.TabIndex = 25;
@@ -111,7 +111,7 @@
             // 
             this.emailtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailtextbox.Location = new System.Drawing.Point(244, 392);
-            this.emailtextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailtextbox.Margin = new System.Windows.Forms.Padding(2);
             this.emailtextbox.Name = "emailtextbox";
             this.emailtextbox.Size = new System.Drawing.Size(318, 24);
             this.emailtextbox.TabIndex = 23;
@@ -120,7 +120,7 @@
             // 
             this.addresstextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addresstextbox.Location = new System.Drawing.Point(244, 190);
-            this.addresstextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addresstextbox.Margin = new System.Windows.Forms.Padding(2);
             this.addresstextbox.Name = "addresstextbox";
             this.addresstextbox.Size = new System.Drawing.Size(318, 24);
             this.addresstextbox.TabIndex = 24;
@@ -128,8 +128,9 @@
             // Backbtn
             // 
             this.Backbtn.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Backbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Backbtn.Location = new System.Drawing.Point(9, 711);
-            this.Backbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Backbtn.Margin = new System.Windows.Forms.Padding(2);
             this.Backbtn.Name = "Backbtn";
             this.Backbtn.Size = new System.Drawing.Size(97, 33);
             this.Backbtn.TabIndex = 21;
@@ -244,8 +245,9 @@
             // submitbtn
             // 
             this.submitbtn.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.submitbtn.Location = new System.Drawing.Point(518, 433);
-            this.submitbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.submitbtn.Margin = new System.Windows.Forms.Padding(2);
             this.submitbtn.Name = "submitbtn";
             this.submitbtn.Size = new System.Drawing.Size(79, 25);
             this.submitbtn.TabIndex = 30;
@@ -257,7 +259,7 @@
             // 
             this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name.Location = new System.Drawing.Point(244, 109);
-            this.name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.name.Margin = new System.Windows.Forms.Padding(2);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(318, 24);
             this.name.TabIndex = 32;
@@ -266,8 +268,9 @@
             // 
             this.lecturerdataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lecturerdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.lecturerdataGridView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lecturerdataGridView.Location = new System.Drawing.Point(663, 109);
-            this.lecturerdataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lecturerdataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.lecturerdataGridView.Name = "lecturerdataGridView";
             this.lecturerdataGridView.RowHeadersWidth = 51;
             this.lecturerdataGridView.RowTemplate.Height = 24;
@@ -278,8 +281,9 @@
             // Deletebtn
             // 
             this.Deletebtn.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Deletebtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Deletebtn.Location = new System.Drawing.Point(420, 433);
-            this.Deletebtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Deletebtn.Margin = new System.Windows.Forms.Padding(2);
             this.Deletebtn.Name = "Deletebtn";
             this.Deletebtn.Size = new System.Drawing.Size(85, 25);
             this.Deletebtn.TabIndex = 34;

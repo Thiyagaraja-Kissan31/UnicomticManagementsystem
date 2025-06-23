@@ -48,6 +48,7 @@
             // 
             this.timetabledataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.timetabledataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.timetabledataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.timetabledataGridView1.Location = new System.Drawing.Point(288, 255);
             this.timetabledataGridView1.Name = "timetabledataGridView1";
             this.timetabledataGridView1.RowHeadersWidth = 51;
