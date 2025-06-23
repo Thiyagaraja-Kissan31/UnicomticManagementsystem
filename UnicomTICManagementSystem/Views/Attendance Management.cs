@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UnicomTICManagementSystem.Controllers;
-using UnicomTICManagementSystem.Ennam;
 using UnicomTICManagementSystem.Model;
 
 namespace UnicomTICManagementSystem.Views
