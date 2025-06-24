@@ -40,6 +40,7 @@
             this.username1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.showpasswordbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -109,22 +110,20 @@
             // password
             // 
             this.password.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password.Location = new System.Drawing.Point(645, 439);
+            this.password.Location = new System.Drawing.Point(691, 439);
             this.password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(345, 27);
+            this.password.Size = new System.Drawing.Size(299, 27);
             this.password.TabIndex = 7;
-            this.password.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // username
             // 
             this.username.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(645, 370);
+            this.username.Location = new System.Drawing.Point(691, 370);
             this.username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(345, 27);
+            this.username.Size = new System.Drawing.Size(299, 27);
             this.username.TabIndex = 8;
-            this.username.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // password1
             // 
@@ -155,7 +154,7 @@
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(645, 370);
+            this.pictureBox1.Location = new System.Drawing.Point(635, 370);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(38, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -167,12 +166,25 @@
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(645, 439);
+            this.pictureBox2.Location = new System.Drawing.Point(635, 437);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(38, 27);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
+            // 
+            // showpasswordbtn
+            // 
+            this.showpasswordbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("showpasswordbtn.BackgroundImage")));
+            this.showpasswordbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.showpasswordbtn.ForeColor = System.Drawing.Color.Transparent;
+            this.showpasswordbtn.Location = new System.Drawing.Point(952, 439);
+            this.showpasswordbtn.Name = "showpasswordbtn";
+            this.showpasswordbtn.Size = new System.Drawing.Size(38, 27);
+            this.showpasswordbtn.TabIndex = 13;
+            this.showpasswordbtn.Text = ".";
+            this.showpasswordbtn.UseVisualStyleBackColor = true;
+            this.showpasswordbtn.Click += new System.EventHandler(this.showpasswordbtn_Click);
             // 
             // Mainlogin
             // 
@@ -181,6 +193,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1582, 853);
+            this.Controls.Add(this.showpasswordbtn);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cancelbtn1);
@@ -218,5 +231,6 @@
         private System.Windows.Forms.Label username1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button showpasswordbtn;
     }
 }

@@ -10,28 +10,14 @@ using UnicomTICManagementSystem.Repositories;
 namespace UnicomTICManagementSystem.Controllers
 {
     internal class ExamController
-    {  
-        public void AddExam(Exam exam)
-        {
-            using (var conn = DbCon.GetConnection())
-            {
-                
-                string query = "INSERT INTO Exams (SubjectName, Date, Time) VALUES (@SubjectName, @Date, @Time)";
-                SQLiteCommand cmd = new SQLiteCommand(query, conn);
-                cmd.Parameters.AddWithValue("@SubjectName", exam.SubjectName);
-                cmd.Parameters.AddWithValue("@Date", exam.Date);
-                cmd.Parameters.AddWithValue("@Time", exam.Time);
-                cmd.ExecuteNonQuery();
-            }
-        }
-
+    {
         public List<Exam> GetAllExams()
         {
             List<Exam> exams = new List<Exam>();
 
             using (var conn = DbCon.GetConnection())
             {
-                
+
                 string query = "SELECT * FROM Exams";
                 SQLiteCommand cmd = new SQLiteCommand(query, conn);
                 SQLiteDataReader reader = cmd.ExecuteReader();
@@ -52,6 +38,22 @@ namespace UnicomTICManagementSystem.Controllers
             return exams;
         }
 
+
+        public void AddExam(Exam exam)
+        {
+            using (var conn = DbCon.GetConnection())
+            {
+                
+                string query = "INSERT INTO Exams (SubjectName, Date, Time) VALUES (@SubjectName, @Date, @Time)";
+                SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                cmd.Parameters.AddWithValue("@SubjectName", exam.SubjectName);
+                cmd.Parameters.AddWithValue("@Date", exam.Date);
+                cmd.Parameters.AddWithValue("@Time", exam.Time);
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        
         public void UpdateExam(Exam exam)
         {
             using (var conn = DbCon.GetConnection())
@@ -66,6 +68,7 @@ namespace UnicomTICManagementSystem.Controllers
                 cmd.ExecuteNonQuery();
             }
         }
+
 
         public void DeleteExam(int id)
         {

@@ -11,6 +11,31 @@ namespace UnicomTICManagementSystem.Controllers
 {
     internal class TimetableController
     {
+        public List<Timetable> GetAllTimetables()
+        {
+            var timetables = new List<Timetable>();
+            using (var conn = DbCon.GetConnection())
+            {
+                string query = "SELECT TimetableID, SubjectName, Lecturername, Date FROM Timetable";
+                using (var command = new SQLiteCommand(query, conn))
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        timetables.Add(new Timetable
+                        {
+                            TimetableID = reader.GetInt32(0),
+                            SubjectName = reader["SubjectName"].ToString(),
+                            LecturerName = reader["Lecturername"].ToString(),
+                            Date = reader["Date"].ToString()
+                        });
+                    }
+                }
+            }
+            return timetables;
+        }
+
+
         public void AddTimetable(Timetable timetable)
         {
             using (var conn = DbCon.GetConnection())
@@ -43,30 +68,6 @@ namespace UnicomTICManagementSystem.Controllers
         }
 
 
-        public List<Timetable> GetAllTimetables()
-        {
-            var timetables = new List<Timetable>();
-            using (var conn = DbCon.GetConnection())
-            {
-                string query = "SELECT TimetableID, SubjectName, Lecturername, Date FROM Timetable";
-                using (var command = new SQLiteCommand(query, conn))
-                using (var reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        timetables.Add(new Timetable
-                        {
-                            TimetableID = reader.GetInt32(0),
-                            SubjectName = reader["SubjectName"].ToString(),
-                            LecturerName = reader["Lecturername"].ToString(),
-                            Date = reader["Date"].ToString()
-                        });
-                    }
-                }
-            }
-            return timetables;
-        }
-
         public void DeleteTimetable(int id)
         {
             using (var conn = DbCon.GetConnection())
@@ -77,7 +78,6 @@ namespace UnicomTICManagementSystem.Controllers
                     cmd.ExecuteNonQuery();
                 
             }
-            
         }
     }
 }

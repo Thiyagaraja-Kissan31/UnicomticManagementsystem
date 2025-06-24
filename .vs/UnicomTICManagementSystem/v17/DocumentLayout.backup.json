@@ -1,121 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kissa\\source\\repos\\UnicomticManagementsystem\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|c:\\users\\kissa\\source\\repos\\unicomticmanagementsystem\\unicomticmanagementsystem\\views\\admin interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|solutionrelative:unicomticmanagementsystem\\views\\admin interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|c:\\users\\kissa\\source\\repos\\unicomticmanagementsystem\\unicomticmanagementsystem\\views\\admin interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|solutionrelative:unicomticmanagementsystem\\views\\admin interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|c:\\users\\kissa\\source\\repos\\unicomticmanagementsystem\\unicomticmanagementsystem\\views\\exam management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|solutionrelative:unicomticmanagementsystem\\views\\exam management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|c:\\users\\kissa\\source\\repos\\unicomticmanagementsystem\\unicomticmanagementsystem\\views\\lecturerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|solutionrelative:unicomticmanagementsystem\\views\\lecturerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|c:\\users\\kissa\\source\\repos\\unicomticmanagementsystem\\unicomticmanagementsystem\\views\\marks management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|solutionrelative:unicomticmanagementsystem\\views\\marks management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|c:\\users\\kissa\\source\\repos\\unicomticmanagementsystem\\unicomticmanagementsystem\\views\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A80744-BD6A-4621-94D4-8A9A7D6CB7EE}|UnicomTICManagementSystem\\UnicomTICManagementSystem.csproj|solutionrelative:unicomticmanagementsystem\\views\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\kissa\\Documents\\C#\\Assingement\\UnicomticManagementsystem\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 5,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Admin Interface.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\kissa\\source\\repos\\UnicomticManagementsystem\\UnicomTICManagementSystem\\Views\\Admin Interface.cs",
-              "RelativeDocumentMoniker": "UnicomTICManagementSystem\\Views\\Admin Interface.cs",
-              "ToolTip": "C:\\Users\\kissa\\source\\repos\\UnicomticManagementsystem\\UnicomTICManagementSystem\\Views\\Admin Interface.cs [Design]",
-              "RelativeToolTip": "UnicomTICManagementSystem\\Views\\Admin Interface.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T11:31:33.588Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Marks Management.cs",
-              "DocumentMoniker": "C:\\Users\\kissa\\source\\repos\\UnicomticManagementsystem\\UnicomTICManagementSystem\\Views\\Marks Management.cs",
-              "RelativeDocumentMoniker": "UnicomTICManagementSystem\\Views\\Marks Management.cs",
-              "ToolTip": "C:\\Users\\kissa\\source\\repos\\UnicomticManagementsystem\\UnicomTICManagementSystem\\Views\\Marks Management.cs",
-              "RelativeToolTip": "UnicomTICManagementSystem\\Views\\Marks Management.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAmwCkAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T11:12:47.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Exam Management.cs",
-              "DocumentMoniker": "C:\\Users\\kissa\\source\\repos\\UnicomticManagementsystem\\UnicomTICManagementSystem\\Views\\Exam Management.cs",
-              "RelativeDocumentMoniker": "UnicomTICManagementSystem\\Views\\Exam Management.cs",
-              "ToolTip": "C:\\Users\\kissa\\source\\repos\\UnicomticManagementsystem\\UnicomTICManagementSystem\\Views\\Exam Management.cs",
-              "RelativeToolTip": "UnicomTICManagementSystem\\Views\\Exam Management.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T11:23:56.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LecturerForm.cs",
-              "DocumentMoniker": "C:\\Users\\kissa\\source\\repos\\UnicomticManagementsystem\\UnicomTICManagementSystem\\Views\\LecturerForm.cs",
-              "RelativeDocumentMoniker": "UnicomTICManagementSystem\\Views\\LecturerForm.cs",
-              "ToolTip": "C:\\Users\\kissa\\source\\repos\\UnicomticManagementsystem\\UnicomTICManagementSystem\\Views\\LecturerForm.cs",
-              "RelativeToolTip": "UnicomTICManagementSystem\\Views\\LecturerForm.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T11:21:20.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StaffForm.cs",
-              "DocumentMoniker": "C:\\Users\\kissa\\source\\repos\\UnicomticManagementsystem\\UnicomTICManagementSystem\\Views\\StaffForm.cs",
-              "RelativeDocumentMoniker": "UnicomTICManagementSystem\\Views\\StaffForm.cs",
-              "ToolTip": "C:\\Users\\kissa\\source\\repos\\UnicomticManagementsystem\\UnicomTICManagementSystem\\Views\\StaffForm.cs",
-              "RelativeToolTip": "UnicomTICManagementSystem\\Views\\StaffForm.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAIwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T11:20:57.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Admin Interface.cs",
-              "DocumentMoniker": "C:\\Users\\kissa\\source\\repos\\UnicomticManagementsystem\\UnicomTICManagementSystem\\Views\\Admin Interface.cs",
-              "RelativeDocumentMoniker": "UnicomTICManagementSystem\\Views\\Admin Interface.cs",
-              "ToolTip": "C:\\Users\\kissa\\source\\repos\\UnicomticManagementsystem\\UnicomTICManagementSystem\\Views\\Admin Interface.cs",
-              "RelativeToolTip": "UnicomTICManagementSystem\\Views\\Admin Interface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T11:16:00.216Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

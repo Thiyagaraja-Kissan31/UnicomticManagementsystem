@@ -12,24 +12,6 @@ namespace UnicomTICManagementSystem.Controllers
 {
     internal class StudentController
     {
-        public void AddStudent(Students student)
-        {
-            using (var conn = DbCon.GetConnection())
-            { 
-               string query = "INSERT INTO Students (StudentName, Address, Gender, Date_of_Birth, SubjectName, PhoneNumber, EmailId) VALUES (@StudentName, @Address, @Gender, @Date_of_Birth, @SubjectName, @PhoneNumber, @EmailId)";
-
-                SQLiteCommand cmd = new SQLiteCommand(query, conn);
-                cmd.Parameters.AddWithValue("@StudentName", student.StudentName);
-                cmd.Parameters.AddWithValue("@Address", student.Address);
-                cmd.Parameters.AddWithValue("@Gender", student.Gender);
-                cmd.Parameters.AddWithValue("@Date_of_Birth", student.Date_of_Birth);
-                cmd.Parameters.AddWithValue("@SubjectName", student.SubjectName);
-                cmd.Parameters.AddWithValue("@PhoneNumber", student.PhoneNumber);
-                cmd.Parameters.AddWithValue("@EmailId", student.EmailId);
-                cmd.ExecuteNonQuery();
-            }
-        }
-
         public List<Students> GetAllStudents()
         {
             List<Students> students = new List<Students>();
@@ -60,6 +42,26 @@ namespace UnicomTICManagementSystem.Controllers
             return students;
         }
 
+
+        public void AddStudent(Students student)
+        {
+            using (var conn = DbCon.GetConnection())
+            { 
+               string query = "INSERT INTO Students (StudentName, Address, Gender, Date_of_Birth, SubjectName, PhoneNumber, EmailId) VALUES (@StudentName, @Address, @Gender, @Date_of_Birth, @SubjectName, @PhoneNumber, @EmailId)";
+
+                SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                cmd.Parameters.AddWithValue("@StudentName", student.StudentName);
+                cmd.Parameters.AddWithValue("@Address", student.Address);
+                cmd.Parameters.AddWithValue("@Gender", student.Gender);
+                cmd.Parameters.AddWithValue("@Date_of_Birth", student.Date_of_Birth);
+                cmd.Parameters.AddWithValue("@SubjectName", student.SubjectName);
+                cmd.Parameters.AddWithValue("@PhoneNumber", student.PhoneNumber);
+                cmd.Parameters.AddWithValue("@EmailId", student.EmailId);
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+       
         public void UpdateStudent(Students student)
         {
             using (var conn = DbCon.GetConnection())
@@ -77,6 +79,7 @@ namespace UnicomTICManagementSystem.Controllers
                 cmd.ExecuteNonQuery();
             }
         }
+
 
         public void DeleteStudent(int id)
         {

@@ -13,5 +13,6 @@ namespace UnicomTICManagementSystem.Model
         public string SubjectName { get; set; }
         public string Date { get; set; }
         public string Status { get; set; }
+        
     }
 }

@@ -33,6 +33,7 @@ namespace UnicomTICManagementSystem.Views
         {
            Admin_Interface adminInterface = new Admin_Interface();
            User_Login userLogin = new User_Login();
+           password.UseSystemPasswordChar = true;
         }
 
         private void loginbtn1_Click(object sender, EventArgs e)
@@ -81,6 +82,12 @@ namespace UnicomTICManagementSystem.Views
                     MessageBox.Show("Invalid User credentials!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void showpasswordbtn_Click(object sender, EventArgs e)
+        {
+            password.UseSystemPasswordChar = !password.UseSystemPasswordChar;
+            password.Show();
         }
     }
 }

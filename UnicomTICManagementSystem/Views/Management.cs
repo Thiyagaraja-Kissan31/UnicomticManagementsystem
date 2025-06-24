@@ -20,7 +20,7 @@ namespace UnicomTICManagementSystem.Views
 
         private void loginbtn1_Click(object sender, EventArgs e)
         {          
-            { 
+            {
                 Mainlogin managementForm = new Mainlogin();
                 managementForm.Show();
                 this.Hide(); 
@@ -30,12 +30,7 @@ namespace UnicomTICManagementSystem.Views
 
         private void Management_login_Load(object sender, EventArgs e)
         {
-            Mainlogin mainLogin = new Mainlogin();
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            Mainlogin mainLogin = new Mainlogin();     
         }
     }
 }

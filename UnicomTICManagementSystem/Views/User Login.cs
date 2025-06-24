@@ -32,6 +32,7 @@ namespace UnicomTICManagementSystem.Views
             Lecturer lecturer = new Lecturer();
             StaffForm staff = new StaffForm();
             Student student = new Student();
+            password.UseSystemPasswordChar = true;
         }
 
         private void cancelbtn1_Click(object sender, EventArgs e)
@@ -105,6 +106,12 @@ namespace UnicomTICManagementSystem.Views
             {
                 MessageBox.Show("Please select a valid role.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void showpasswordbtn_Click(object sender, EventArgs e)
+        {
+            password.UseSystemPasswordChar = !password.UseSystemPasswordChar;
+            password.Show();
         }
     }
 }

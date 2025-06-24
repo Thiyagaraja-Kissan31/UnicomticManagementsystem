@@ -50,7 +50,7 @@ namespace UnicomTICManagementSystem.Views
             subjectname1.ValueMember = "Id";
 
             var studentController = new StudentController();
-            var students = studentController.GetAllStudents();
+            var students =studentController.GetAllStudents();
             studentname1.DataSource = students;
             studentname1.DisplayMember = "StudentName";
             studentname1.ValueMember = "StudentID"; 

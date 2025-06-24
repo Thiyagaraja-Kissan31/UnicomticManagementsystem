@@ -37,9 +37,11 @@ namespace UnicomTICManagementSystem.Views
 
         private void Attendance_Management_Load(object sender, EventArgs e)
         {
-            var students = AttendanceController.GetAllAttendance(); 
+            var studentController = new StudentController();
+            var students = studentController.GetAllStudents();
             name.DataSource = students;
             name.DisplayMember = "StudentName";
+            name.ValueMember = "StudentID";
 
             var subjects = SubjectController.GetAllSubject();
             subjectnametextbox.DataSource = subjects;
@@ -55,7 +57,7 @@ namespace UnicomTICManagementSystem.Views
                 StudentName = name.Text,
                 SubjectName = subjectnametextbox.Text,
                 Date = dateofbirthTextBox1.Text,
-                Status = statuscombobox.Text
+                Status = statuscombobox.Text,
 
             };
             AttendanceController.AddAttendance(Attendance);

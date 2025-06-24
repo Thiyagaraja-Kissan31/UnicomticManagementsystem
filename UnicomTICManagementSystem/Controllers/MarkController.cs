@@ -10,8 +10,35 @@ using UnicomTICManagementSystem.Repositories;
 namespace UnicomTICManagementSystem.Controllers
 {
     internal class MarkController
-    {   
-            public void AddMark(Mark mark)
+    {
+        public List<Mark> GetAllMarks()
+        {
+            List<Mark> marks = new List<Mark>();
+
+            using (var conn = DbCon.GetConnection())
+            {
+                string query = "SELECT * FROM Marks";
+                SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                SQLiteDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    marks.Add(new Mark
+                    {
+                        MarksID = Convert.ToInt32(reader["MarksID"]),
+                        StudentName = reader["StudentName"].ToString(),
+                        SubjectName = reader["SubjectName"].ToString(),
+                        Marks = reader["Marks"].ToString(),
+                        Date = reader["Date"].ToString(),
+                    });
+                }
+            }
+
+            return marks;
+        }
+
+
+        public void AddMark(Mark mark)
             {
                 using (var conn = DbCon.GetConnection())
             {
@@ -25,32 +52,7 @@ namespace UnicomTICManagementSystem.Controllers
                 }
             }
 
-            public List<Mark> GetAllMarks()
-            {
-                List<Mark> marks = new List<Mark>();
-
-                using (var conn = DbCon.GetConnection())
-            {
-                    string query = "SELECT * FROM Marks";
-                    SQLiteCommand cmd = new SQLiteCommand(query, conn);
-                    SQLiteDataReader reader = cmd.ExecuteReader();
-
-                    while (reader.Read())
-                    {
-                        marks.Add(new Mark
-                        {
-                            MarksID = Convert.ToInt32(reader["MarksID"]),
-                            StudentName = reader["StudentName"].ToString(),
-                            SubjectName = reader["SubjectName"].ToString(),
-                            Marks = reader["Marks"].ToString(),
-                            Date =reader["Date"].ToString(),
-                        });
-                    }
-                }
-
-                return marks;
-            }
-
+           
             public void UpdateMark(Mark mark)
             {
                 using (var conn = DbCon.GetConnection())
@@ -67,6 +69,7 @@ namespace UnicomTICManagementSystem.Controllers
                     cmd.ExecuteNonQuery();
             }
             }
+
 
             public void DeleteMark(int id)
             {

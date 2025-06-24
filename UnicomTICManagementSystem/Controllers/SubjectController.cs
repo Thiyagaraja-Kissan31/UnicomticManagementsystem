@@ -8,8 +8,7 @@ using static System.Collections.Specialized.BitVector32;
 namespace UnicomTICManagementSystem.Controllers
 {
     internal class SubjectController
-    {
-        
+    { 
         public static List<Subject> GetAllSubject()
         {
             var subject = new List<Subject>();
@@ -31,6 +30,7 @@ namespace UnicomTICManagementSystem.Controllers
             return subject;
         }
 
+
         public void AddSubject(Subject subject)
         {
             using (var conn = DbCon.GetConnection())
@@ -43,6 +43,7 @@ namespace UnicomTICManagementSystem.Controllers
                 cmd.ExecuteNonQuery();
             }
         }
+
 
         public void UpdateSubject(Subject subject)
         {
@@ -59,6 +60,7 @@ namespace UnicomTICManagementSystem.Controllers
             }
         }
 
+
         public void DeleteSubject(int subjectId)
         {
             using (var conn = DbCon.GetConnection())
@@ -72,7 +74,5 @@ namespace UnicomTICManagementSystem.Controllers
             }
         }
     }
-    
-    
 }
 

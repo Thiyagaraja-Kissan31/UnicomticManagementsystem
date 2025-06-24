@@ -11,25 +11,12 @@ namespace UnicomTICManagementSystem.Controllers
 {
     internal class AttendanceController
     {
-        public void AddAttendance(Attendance attendance)
-        {
-            using (var conn = DbCon.GetConnection())
-            {
-                string query = "INSERT INTO Attendance (StudentName, SubjectName, Date) VALUES (@StudentName, @SubjectName, @Date)";
-                SQLiteCommand cmd = new SQLiteCommand(query, conn);
-                cmd.Parameters.AddWithValue("@StudentName", attendance.StudentName);
-                cmd.Parameters.AddWithValue("@SubjectName", attendance.SubjectName);
-                cmd.Parameters.AddWithValue("@Date", attendance.Date);
-                cmd.ExecuteNonQuery();
-            }
-        }
-
         public List<Attendance> GetAllAttendance()
         {
             List<Attendance> attendanceList = new List<Attendance>();
 
             using (var conn = DbCon.GetConnection())
-            {                
+            {
                 string query = "SELECT * FROM Attendance";
                 SQLiteCommand cmd = new SQLiteCommand(query, conn);
                 SQLiteDataReader reader = cmd.ExecuteReader();
@@ -41,7 +28,8 @@ namespace UnicomTICManagementSystem.Controllers
                         AttendanceId = Convert.ToInt32(reader["AttendanceId"]),
                         StudentName = reader["StudentName"].ToString(),
                         SubjectName = reader["SubjectName"].ToString(),
-                        Date = reader["Date"].ToString()
+                        Date = reader["Date"].ToString(),
+                        Status = reader["Status"].ToString()
                     });
                 }
             }
@@ -49,19 +37,37 @@ namespace UnicomTICManagementSystem.Controllers
             return attendanceList;
         }
 
-        public void UpdateAttendance(Attendance attendance)
+
+        public void AddAttendance(Attendance attendance)
         {
             using (var conn = DbCon.GetConnection())
             {
-                string query = "UPDATE Attendance SET StudentName=@StudentName, SubjectName=@SubjectName, Date=@Date WHERE AttendanceId=@Id";
+                string query = "INSERT INTO Attendance (StudentName, SubjectName, Date, Status) VALUES (@StudentName, @SubjectName, @Date, @Status)";
                 SQLiteCommand cmd = new SQLiteCommand(query, conn);
                 cmd.Parameters.AddWithValue("@StudentName", attendance.StudentName);
                 cmd.Parameters.AddWithValue("@SubjectName", attendance.SubjectName);
                 cmd.Parameters.AddWithValue("@Date", attendance.Date);
+                cmd.Parameters.AddWithValue("@Status", attendance.Status);
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        
+        public void UpdateAttendance(Attendance attendance)
+        {
+            using (var conn = DbCon.GetConnection())
+            {
+                string query = "UPDATE Attendance SET StudentName=@StudentName, SubjectName=@SubjectName, Date=@Date, @Status=Status WHERE AttendanceId=@Id";
+                SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                cmd.Parameters.AddWithValue("@StudentName", attendance.StudentName);
+                cmd.Parameters.AddWithValue("@SubjectName", attendance.SubjectName);
+                cmd.Parameters.AddWithValue("@Date", attendance.Date);
+                cmd.Parameters.AddWithValue("@Status", attendance.Status);
                 cmd.Parameters.AddWithValue("@Id", attendance.AttendanceId);
                 cmd.ExecuteNonQuery();
             }
         }
+
 
         public void DeleteAttendance(int id)
         {
